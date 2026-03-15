@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAEN - Craft & Core Menu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Prompt', sans-serif; background-color: #f4f4f4; }
+        .font-watermark { font-family: 'Playfair Display', serif; }
+        .bg-kaen-light { background-color: #DDE2E5; }
+        .text-kaen-dark { color: #333333; }
+        /* เพิ่ม Transition เพื่อความนุ่มนวล */
+        .hover-zoom img { transition: transform 0.7s ease; }
+        .hover-zoom:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6 md:p-12">
+
+    <div class="w-full max-w-6xl bg-white shadow-2xl rounded-sm overflow-hidden flex flex-col md:flex-row min-h-[700px]">
+        
+        <div class="w-full md:w-[45%] bg-kaen-light p-10 md:p-20 relative flex flex-col justify-center overflow-hidden">
+            
+            <div class="absolute top-10 left-10 opacity-10 select-none pointer-events-none">
+                <span class="font-watermark text-[12rem] md:text-[18rem] leading-none text-gray-500">Kaen</span>
+            </div>
+
+            <div class="relative z-10">
+                <h1 class="text-2xl md:text-3xl font-light tracking-[0.3em] text-black mb-12 border-b border-black/10 pb-6 inline-block">
+                    CRAFT & CORE MENU
+                </h1>
+
+                <div class="space-y-6 text-[14px] md:text-[16px] leading-relaxed text-kaen-dark font-light">
+                    <p><strong>แก่นที่ ๑...แก่นแท้</strong> หรือใจความสำคัญ คือการใช้วัตถุดิบท้องถิ่นและความยั่งยืนด้านอาหาร</p>
+                    <p><strong>แก่นที่ ๒...แก่นไม้</strong> ทางร้านมีไม้เป็นองค์ประกอบหลักทางสถาปัตยกรรม</p>
+                    <p><strong>แก่นที่ ๓...แก่นแก้ว</strong> ความแก่นเฟี้ยวของเชฟ ที่ใช้รังสรรค์เมนูอาหาร</p>
+                    <p><strong>แก่นที่ ๔...ภาษาอีสาน</strong> มีความหมายว่า อยู่สบาย</p>
+                    <p><strong>แก่นที่ ๕...ขอนแก่น</strong> เราอยากเป็นร้านอาหารที่ทำให้คนขอนแก่นรู้สึกภูมิใจ</p>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-black/5">
+                    <h2 class="text-4xl font-bold tracking-[0.1em] text-black mb-1">แก่น</h2>
+                    <p class="text-[10px] tracking-[0.5em] text-gray-400 font-light uppercase">KAEN - KHON KAEN</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full md:w-[55%] relative flex flex-col">
+            
+            <div class="flex-1 overflow-hidden hover-zoom relative">
+                <img src="kaen.jpg" 
+                     alt="Kaen Restaurant" 
+                     class="w-full h-full object-cover grayscale-[10%] brightness-95">
+                
+                <div class="absolute inset-0 border-[20px] border-white/10 pointer-events-none"></div>
+            </div>
+
+            <div class="h-32 bg-white flex items-center px-12 justify-between">
+                <div class="text-[11px] tracking-[0.2em] text-gray-400 uppercase">
+                    Sustainable Isan Cuisine
+                </div>
+                <div class="flex space-x-4">
+                    <div class="w-1.5 h-1.5 bg-kaen-light rounded-full"></div>
+                    <div class="w-1.5 h-1.5 bg-gray-300 rounded-full"></div>
+                    <div class="w-1.5 h-1.5 bg-gray-200 rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
